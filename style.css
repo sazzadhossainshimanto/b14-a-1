@@ -1,7 +1,13 @@
+
+
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Inter";
+    font-optical-sizing: auto;
+    font-style: normal;
 }
 .logo-img{
     width: 100px;
@@ -113,6 +119,7 @@
     width:1300px;
     gap: 32px;
     align-items: center;
+    margin-bottom: 120px;
     
 }
 .speaker-title{
@@ -124,5 +131,302 @@
     flex-direction: column;
     align-items: center;
 }
+.section-title-2{
+    text-align: center;
+    font-size: 56px;
+    font-weight: 800;
+}
+.section-description{
+    color: #575757;
+    margin:12px;
+    text-align: center; 
 
+}
+.price-card{
+    border: #E5E7EB 1px solid;
+    border-radius: 12px;
+    padding: 40px;
+    width: 370px;
+    height: 445px;
+   margin-bottom: 200px;
+    
+}
+.price-card h4 {
+    color: #888888;
+    font-size: 13px;
+    font-weight: 500;
+    
+}
+.price-card h1 {
+    color: #0D1B2A;
+    font-size: 46px;
+    font-weight: 800;
+    margin-top: 10px;
+    
+}
+.price-card p {
+    color: #888888;
+    font-size: 13px;
+    font-weight: 400;
+}
+.line{
+    margin: 20px 0;
+     border: 1px solid #E5E7EB;
+    width: 305px;
+}
+li::marker {
+  color: blue;
+}
+.list-item{
+    color: #333333;
+    font-size: 14px;
+    font-weight: 400;
+    padding-left: 15px;
+    display: flex;
+    flex-direction:column;
+    gap: 10px;
+
+
+}
+
+.pricing-section{
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+    margin-top: 80px;
+}
+.price-btn{
+    display: flex;
+    justify-content: center;
+    margin-top: 32px;
+    
+}
+.price-btn button{
+    background: white;
+    color: #2563EB;
+    font-size: 14px;
+    font-weight: 600;
+    border: 1px solid #2563EB ;
+    padding: 12px;
+    width: 200px;
+    cursor: pointer;
+    width: 180px;
+    border-radius: 10px;
+
+}
+.pro-price{
+    background-color: #0D1B2A;
+}
+.pro-price h4{
+    color: #93C5FD;
+} 
+.pro-price h1{
+    color: #ffffff;
+} 
+.pro-item{
+    color: #ffffff80;
+}
+.pro-price button{
+    background-color: #1D4ED8;
+    color: white;
+}
+
+/* ===========================
+      Client Reviews
+=========================== */
+
+.reviews{
+    padding:100px 0;
+    background:#F8FAFC;
+    overflow:hidden;
+}
+
+.container{
+    width:min(1200px,90%);
+    margin:auto;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:60px;
+}
+
+.section-title h2{
+    font-size:42px;
+    color:#0F172A;
+    margin-bottom:12px;
+}
+
+.section-title p{
+    color:#64748B;
+    font-size:17px;
+}
+
+.review-slider{
+    overflow:hidden;
+    position:relative;
+}
+
+.review-track{
+
+    display:flex;
+    gap:28px;
+
+    width:max-content;
+
+    animation:scroll 28s linear infinite;
+}
+
+.review-slider:hover .review-track{
+    animation-play-state:paused;
+}
+
+.review-card{
+
+    width:360px;
+
+    background:#fff;
+
+    border-radius:18px;
+
+    padding:32px;
+
+    box-shadow:0 12px 40px rgba(15,23,42,.08);
+
+    transition:.45s;
+}
+
+.review-card:hover{
+
+    transform:translateY(-12px);
+
+    box-shadow:0 25px 60px rgba(37,99,235,.18);
+
+}
+
+.stars{
+
+    color:#2563EB;
+
+    font-size:22px;
+
+    letter-spacing:3px;
+
+    margin-bottom:20px;
+}
+
+.review-card p{
+
+    color:#475569;
+
+    line-height:1.8;
+
+    margin-bottom:30px;
+}
+
+.review-user{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+}
+
+.review-user img{
+
+    width:60px;
+
+    height:60px;
+
+    border-radius:50%;
+
+    object-fit:cover;
+
+    border:3px solid #2563EB;
+}
+
+.review-user h4{
+
+    margin-bottom:4px;
+
+    color:#0F172A;
+}
+
+.review-user span{
+
+    color:#64748B;
+
+    font-size:14px;
+}
+
+
+/* Infinite animation */
+
+@keyframes scroll{
+
+    from{
+        transform:translateX(0);
+    }
+
+    to{
+        transform:translateX(calc(-360px * 2));
+    }
+
+}
+
+
+/* Responsive */
+
+@media(max-width:768px){
+
+.review-card{
+
+width:300px;
+
+}
+
+.section-title h2{
+
+font-size:34px;
+
+}
+
+}
+
+
+
+
+.footer {
+  background: #0D1B2A;
+  padding: 56px 60px 32px;
+}
+
+.footer-container {
+  max-width: 1320px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  border-top: 1px solid #ffffff14;
+  padding-top: 24px;
+}
+
+.footer p {
+  color: #94A3B8;
+  font-size: 14px;
+  margin: 0;
+}
+
+.footer-links {
+  display: flex;
+  gap: 24px;
+}
+
+.footer-links a {
+  color: #94A3B8;
+  text-decoration: none;
+  font-size: 14px;
+}
 
