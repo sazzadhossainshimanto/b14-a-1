@@ -230,7 +230,10 @@ li::marker {
     background-color: #1D4ED8;
     color: white;
 }
-
+.connect{
+    color: #1D4ED8;
+    font-size: 85px;
+}
 /* ===========================
       Client Reviews
 =========================== */
